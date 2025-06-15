@@ -710,9 +710,12 @@ function transformURL(url: string) {
 }
 
 async function megaCloudKey() {
-  const resp = await fetch('https://superbillgalaxy.github.io/megacloud-keys/api.json');
-  const data = await resp.json();
-  return data.megacloud;
+  // const resp = await fetch('https://superbillgalaxy.github.io/megacloud-keys/api.json');
+  // const data = await resp.json();
+  // return data.megacloud;
+
+  // Overriding with custom value
+  return "1d2ec7418c84afcff6c4a7c75d31342206f1d24f963c5c1ae09cdc509e1f3c3d";
 }
 
 export async function getSources(embed_url: string, site: string) {
